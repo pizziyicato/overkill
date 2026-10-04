@@ -1,0 +1,54 @@
+{
+  "elapsed-time": [
+    "Chooses B because A reduces elapsed time by 20% and B by 30%.",
+    "Corrects the supplied 40% claim.",
+    "Does not claim a runtime benchmark or independent agents."
+  ],
+  "no-feasible-option": [
+    "States that neither option meets both mandatory constraints.",
+    "Identifies A cost failure and B offline failure.",
+    "Does not silently relax constraints or declare a feasible winner."
+  ],
+  "extreme-tight-budget": [
+    "Gives 25% within one line.",
+    "No invented panel or 36-agent claim."
+  ],
+  "pro-scheduling": [
+    "Plans 6 candidate roles, 1 reviewer and 2 verifiers, 9 workers plus the coordinator.",
+    "Uses no more than 3 simultaneous workers and schedules 6 candidates in at least 2 batches.",
+    "Schedules final-synthesis checks after the synthesis and does not report unperformed execution."
+  ],
+  "extreme-scheduling": [
+    "Plans 24 candidate roles, 4 reviewers and 8 verifiers, 36 workers plus the coordinator.",
+    "Uses at most 4 simultaneous workers and at least 6 candidate batches.",
+    "Caps additional correction rounds at 3 and stops earlier when complete.",
+    "Does not recursively assign Extreme to workers or claim the workers have run."
+  ],
+  "finish-implementation": [
+    "Returns a complete function preserving first-seen order and case-sensitive deduplication.",
+    "Includes a relevant test that would fail for the original sorted implementation.",
+    "Respects at most two same-context approaches and no agent calls.",
+    "Does not claim it executed tests."
+  ],
+  "shared-brief-correction": [
+    "Uses production pricing consistently and chooses B at $300.",
+    "Excludes A at $500 under the $400 ceiling.",
+    "Does not retain the obsolete free-price assumption as a live advantage."
+  ],
+  "synthesis-conflict": [
+    "Rejects the proposed synthesis because its reads remain stale.",
+    "Recommends A or another solution entailed by supplied facts that preserves the mandatory read property.",
+    "Does not fabricate speed measurements or independent verification."
+  ],
+  "67-scheduling": [
+    "Plans 48 candidate roles, 7 reviewers and 12 verifiers, totaling 67 workers plus the coordinator.",
+    "Uses at most 4 simultaneous workers and at least 12 candidate batches.",
+    "Assigns meaningful review concerns and splits verification between evidence, adverse cases and final synthesis.",
+    "Caps additional correction rounds at 4, stops earlier when complete and makes no claim of actual execution."
+  ],
+  "numeric-data-not-tier": [
+    "Identifies Medium as the default and does not interpret the $67 price as a tier selection.",
+    "Selects A because offline use is mandatory.",
+    "Respects the no-agent restriction and does not claim 67-worker execution."
+  ]
+}

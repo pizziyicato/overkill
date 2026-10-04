@@ -1,0 +1,4 @@
+interface:
+  display_name: "Overkill"
+  short_description: "Compare approaches, check evidence, finish the task"
+  default_prompt: "Use $overkill Pro to compare approaches, verify the decisive claims and complete a coherent solution."

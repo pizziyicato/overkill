@@ -1,0 +1,52 @@
+[
+  {
+    "id": "elapsed-time",
+    "prompt": "Use $overkill Lite to compare proposals A and B using only these facts. Current job takes 40 seconds. A takes 32 seconds and costs nothing. B takes 28 seconds and costs $200/month, within our budget. Require at least 25% less elapsed time. The summary says A cuts elapsed time by 40%. Choose an option and show the decisive arithmetic. No web or delegation.",
+    "tools": "No execution, web or delegation. Answer from supplied figures."
+  },
+  {
+    "id": "no-feasible-option",
+    "prompt": "Use $overkill Medium to choose between two supplied vendors. We require both offline use and recurring cost at most $100/month. A is offline and costs $150/month. B costs $80/month and requires its online API. These are the only permitted options. Give a recommendation. Do not buy or contact anyone.",
+    "tools": "No external tools or delegation. Use supplied facts."
+  },
+  {
+    "id": "extreme-tight-budget",
+    "prompt": "Use $overkill Extreme. I have time for only a one-line answer and no agent calls. What is the percentage decrease from 80 to 60?",
+    "tools": "No delegation or external tools. One-line answer."
+  },
+  {
+    "id": "pro-scheduling",
+    "prompt": "Use $overkill Pro to plan a comparison of six genuinely different migration approaches. The host supports four live agents including you, and can retire finished workers to reuse capacity. Give the worker allocation and execution schedule only. Do not start any agents or claim to have run the comparison.",
+    "tools": "Planning only. Four live-agent slots including coordinator. No execution."
+  },
+  {
+    "id": "extreme-scheduling",
+    "prompt": "Use $overkill Extreme to plan a complex design evaluation with enough distinct work for the full tier. The host allows five live agents including the coordinator, and can retire workers. Explain the candidate, review and verification allocation, batching and stopping rule. Do not actually run any workers.",
+    "tools": "Planning only. Five live-agent slots including coordinator. No execution."
+  },
+  {
+    "id": "finish-implementation",
+    "prompt": "Use $overkill Pro to fix this Python function. It should return tags in first-seen order without duplicates across all input groups. Tags are strings, compared case-sensitively. Current implementation is `def merge_tags(groups): return sorted(set(tag for group in groups for tag in group))`. Use at most two same-context approaches. Return the completed function and one useful test. No files or agent calls.",
+    "tools": "Return code only with a brief explanation if useful. No execution or delegation."
+  },
+  {
+    "id": "shared-brief-correction",
+    "prompt": "Use $overkill Medium to choose A or B for production. Mandatory monthly cost ceiling is $400. A was initially proposed as free. The newly supplied pricing sheet says A is free only for pilots and costs $500/month in production. B costs $300/month in production. Both meet every other requirement equally. Compare using the corrected facts. No browsing, delegation or vendor contact.",
+    "tools": "No tools. All supplied facts are authoritative for this scenario."
+  },
+  {
+    "id": "synthesis-conflict",
+    "prompt": "Use $overkill Ultra to recommend one coherent inventory design from these supplied options. Stock counts must be correct immediately after a successful write. A reads the transactional database and meets that condition. B reads a replica with a 60-second lag and does not meet it. A proposed synthesis writes to the transactional database but serves every read from the lagged replica, claiming it keeps A correctness and B speed. Use only these facts. Do not invent latency benchmarks. No agent calls.",
+    "tools": "No tools or delegation. Review the supplied designs."
+  },
+  {
+    "id": "67-scheduling",
+    "prompt": "Use $overkill 67 to plan a complex evaluation with enough distinct work for the full tier. The host permits five live agents including the coordinator and can retire finished workers. Give the exact role allocation, useful responsibilities, schedule and stopping rule. Do not actually run workers.",
+    "tools": "Planning only. Five live-agent slots including coordinator. No execution."
+  },
+  {
+    "id": "numeric-data-not-tier",
+    "prompt": "Use $overkill to compare these two supplied subscriptions. Both cost $67 per month. A supports offline use. B requires a connection. Offline use is mandatory. Give a concise recommendation and state the default effort level. Do not call agents or other tools.",
+    "tools": "No tools or delegation. The number 67 is a price in the supplied data."
+  }
+]
